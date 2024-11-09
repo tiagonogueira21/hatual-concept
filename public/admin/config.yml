@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Add this for local development
+local_backend: true
+
+media_folder: "static/media"
+public_folder: "/media"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Video", name: "hero_video", widget: "file" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Background Image", name: "image", widget: "image" }
+          - {
+              label: "Portfolio Title",
+              name: "portfolio_title",
+              widget: "string",
+            }
+          - {
+              label: "Portfolio Description",
+              name: "portfolio_description",
+              widget: "text",
+            }
+          - {
+              label: "Portfolio Video",
+              name: "portfolio_video",
+              widget: "file",
+            }
+          - { label: "About Title", name: "about_title", widget: "string" }
+          - {
+              label: "About Description",
+              name: "about_description",
+              widget: "text",
+            }
+          - { label: "About Image", name: "about_image", widget: "image" }
+          - { label: "Socials Title", name: "socials_title", widget: "string" }
+          - {
+              label: "Socials Description",
+              name: "socials_description",
+              widget: "text",
+            }
+          - {
+              label: "Instagram Token",
+              name: "instagram_token",
+              widget: "string",
+            }

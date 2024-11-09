@@ -1,0 +1,26 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Hatual Concept'
+
+[params]
+  description = "Your site description here"
+  keywords = "key, words, here"
+  contact_email = "contact@example.com"
+  contact_phone = "+1 234 567 8900"
+  footer_description = "Your footer description here"
+  
+  [params.social_links]
+    instagram = "https://instagram.com/yourhandle"
+    facebook = "https://facebook.com/yourpage"
+    twitter = "https://twitter.com/yourhandle"
+
+[build]
+  writeStats = true
+  
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Add taxonomy settings to fix the warnings
+[taxonomies]
+  category = "categories"
+  tag = "tags"

@@ -1,0 +1,11 @@
+<section class="portfolio">
+    <div class="portfolio-content">
+    <h2>{{ .Params.portfolio_title }}</h2>
+        <p>{{ .Params.portfolio_description }}</p>
+    </div>
+    <div class="portfolio-video">
+        <video controls>
+            <source src="{{ .Params.portfolio_video }}" type="video/mp4">
+        </video>
+    </div>
+</section>

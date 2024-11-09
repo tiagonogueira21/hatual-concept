@@ -1,0 +1,28 @@
+$cor-barra: #2D3B37;
+$bg-color: #031510;
+$darkgreen: #0D261F;
+$lime: #56C793;
+
+
+// media sizes
+$phone: rem(450);
+$tablet: rem(768);
+$laptop: rem(1024);
+$laptop-l: rem(1600);
+$desktop: rem(1920);
+$desktop-4k: rem(2560);
+
+:root {
+    --def-padding: 9rem; //72px
+    --barra: 3rem;
+    @media (max-width: $tablet) {
+        --def-padding: 3rem; //48px
+        --barra: 2rem;
+    }
+    @media screen and (max-width: $phone) {
+        --def-padding: 1rem;
+    }
+}
+
+$def-padding: var(--def-padding);
+$barra: var(--barra);

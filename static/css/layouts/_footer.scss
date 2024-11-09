@@ -1,0 +1,36 @@
+footer {
+	background-color: $darkgreen;
+	margin: 0 $barra;
+	position: relative;
+	z-index: 2;
+	.logo {
+		width: 100%;
+		padding: rem(24);
+		box-sizing: border-box;
+		margin-bottom: $barra;
+		img {
+			width: inherit;
+			@include filter-lime;
+		}
+	}
+	.copyright {
+		color: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: $barra;
+		padding-inline: rem(16);
+		@media (max-width: $phone) {
+			flex-direction: column;
+			height: calc($barra * 1.5);
+			justify-content: center;
+		}
+		p {
+			font-size: rem(14);
+			margin: unset;
+		}
+		a {
+			color: inherit;
+		}
+	}
+}

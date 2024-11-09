@@ -1,0 +1,38 @@
+#logo-div {
+	position: fixed;
+	transition: all 0.2s ease;
+    margin-top: rem(24);
+    margin-left: rem(24);
+    z-index: 9999;
+	#logo-animado {
+		height: rem(40);
+		width: auto;
+		fill: white;
+		mask rect {
+			fill: white;
+		}
+		#H-animado {
+			animation: h-scroll 12s ease-out infinite;
+		}
+		@keyframes h-scroll {
+			20%, 100% {
+				transform: translatey(-149px);
+			}
+		}
+	}
+	&.icon {
+		height: rem(64);
+		width: rem(64);
+		border-radius: 1000px;
+		padding: rem(20);
+		background-color: $darkgreen;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		#logo-animado {
+			fill: $lime;
+			height: 100%;
+		}
+	}
+}

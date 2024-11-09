@@ -1,0 +1,51 @@
+.vert-bar {
+	height: 100%;
+	width: $barra;
+	background: $cor-barra;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	&.right {
+		right: 0;
+	}
+}
+.h-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $cor-barra;
+	height: $barra;
+	padding-inline: rem(70);
+	position: fixed;
+	bottom: $barra;
+	width: 100%;
+	z-index: 100;
+	box-sizing: border-box;
+	@media (max-width: $phone) {
+		padding-inline: calc($barra + rem(16));
+		justify-content: center;
+		bottom: calc($barra * 1.5);
+	}
+	a {
+		display: flex;
+		align-items: center;
+		gap: rem(8);
+		img {
+			@include filter-lime;
+		}
+		&.email {
+			@media (max-width: $tablet) {
+				display: none;
+			}
+		}
+	}
+}
+.blured-bar {
+	position: fixed;
+	height: $barra;
+	width: 100%;
+	bottom: 0;
+	background-color: rgba($bg-color, .85);
+	z-index: 1;
+	backdrop-filter: blur(rem(4));
+}

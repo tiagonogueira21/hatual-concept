@@ -1,0 +1,28 @@
+h1, h2, h3 {
+    line-height: 0.9;
+    letter-spacing: -2px;
+    font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
+    margin: unset;
+}
+h1 {
+    font-size: rem(64);
+    @media (max-width: $tablet) {
+        font-size: rem(48);
+    }
+}
+h2 {
+    font-size: rem(48);
+    @media (max-width: $tablet) {
+        font-size: rem(32);
+    }
+}
+h3 {
+    font-size: rem(28);
+}
+p {
+    letter-spacing: -0.2px;
+    font-weight: 300;
+}
+p.small {
+    font-size: rem(18);
+}

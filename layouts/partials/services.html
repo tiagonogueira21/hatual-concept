@@ -1,0 +1,12 @@
+<section class="services">
+    <div class="services-grid">
+        {{ range .Params.services }}
+        <div class="service" style="background-image: url('{{ .image }}')">
+            <div class="service-content">
+                <h2>{{ .title }}</h2>
+                <p>{{ .description }}</p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
