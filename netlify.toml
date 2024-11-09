@@ -1,0 +1,10 @@
+[build]
+  publish = "public"
+  command = "hugo --config hugo.toml"
+
+[build.environment]
+  HUGO_VERSION = "0.123.0"  # Replace with your Hugo version
+
+[context.production.environment]
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true" 
